@@ -3,6 +3,7 @@
 </template>
 
 <script setup>
+// 1. 有限状态机
 import { createMachine, interpret } from "xstate";
 
 // 无状态的状态机定义
@@ -28,8 +29,9 @@ const toggleMachine = createMachine({
 const toggleService = interpret(toggleMachine)
     .onTransition((state) => console.log(state.value))
     .start();
-    
+
 const toggle = () => {
-    toggleService.send({ type: "TOGGLE" });
+    toggleService.send({ type: "TOGGLE" }); // 修改状态机实例的状态
+    const state = toggleMachine.transition("active", { type: "TOGGLE" }).value; // 获取某个状态经过type之后的值
 };
 </script>
