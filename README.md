@@ -24,4 +24,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-https://xstate.js.org/docs/zh/guides/states.html#api
+https://xstate.js.org/docs/zh/guides/hierarchical.html#api
