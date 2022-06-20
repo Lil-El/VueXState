@@ -7,8 +7,9 @@
     <state-4 />
     <br>
     <state-5 />
-    <state-6  /> -->
-    <state-7  />
+    <state-6  />
+    <state-7  /> -->
+    <state-8  />
 </template>
 
 <script setup>
@@ -20,4 +21,5 @@ import State4 from "./1.basic/4.vue"
 import State5 from "./2/1.state.vue"
 import State6 from "./2/2.event.vue"
 import State7 from "./2/3.transition.vue"
+import State8 from "./2/4.actions.vue"
 </script>
