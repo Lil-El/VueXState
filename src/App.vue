@@ -8,8 +8,13 @@
     <br>
     <state-5 />
     <state-6  />
-    <state-7  /> -->
+    <state-7  />
     <state-8  />
+    <state-9  />
+    <state-10  />
+    <state-11  />
+    <state-12  /> -->
+    <state-13  />
 </template>
 
 <script setup>
@@ -21,5 +26,10 @@ import State4 from "./1.basic/4.vue"
 import State5 from "./2/1.state.vue"
 import State6 from "./2/2.event.vue"
 import State7 from "./2/3.transition.vue"
-import State8 from "./2/4.actions.vue"
+import State8 from "./2/4.actions-send.vue"
+import State9 from "./2/4.actions-raise.vue"
+import State10 from "./2/4.actions-forward.vue"
+import State11 from "./2/4.actions-respond.vue"
+import State12 from "./2/4.actions-error.vue"
+import State13 from "./2/4.actions-choose.vue"
 </script>

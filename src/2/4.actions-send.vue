@@ -3,7 +3,15 @@
 </template>
 
 <script setup>
-import { createMachine, interpret, assign, send, Machine } from "xstate";
+import {
+    createMachine,
+    interpret,
+    assign,
+    actions,
+    send,
+    Machine,
+} from "xstate";
+const { raise, respond, log } = actions;
 // actions: 在一个状态进入、退出时执行动作actions
 // - 1. entry
 // - 2. exit
@@ -12,6 +20,19 @@ import { createMachine, interpret, assign, send, Machine } from "xstate";
 const lazyStubbornMachine = createMachine({
     id: "stubborn",
     initial: "inactive",
+    entry: log("entry"),
+    invoke: {
+        id: "sonService",
+        src: createMachine({
+            initial: "a",
+            states: {
+                a: {}
+            },
+            on: {
+                callA: {actions: [()=>console.log("AAA")]}
+            }
+        })
+    },
     states: {
         inactive: {
             entry() {
@@ -32,7 +53,8 @@ const lazyStubbornMachine = createMachine({
                         // 这意味着该事件将在 解释（interpret） 的下一步“步骤”上发送。
                         // 即在转换之后的active上发送事件
                         // 所以最终仍然会转换为inactive
-                        send("TOGGLE1") // ()=>send(...) 这么写是错误的；send()返回的是对象，不是命令式函数
+                        send({type: "callA"}, {to: "sonService"}),
+                        send("TOGGLE1"), // ()=>send(...) 这么写是错误的；send()返回的是对象，不是命令式函数
                     ],
                 },
             },
