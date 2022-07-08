@@ -13,8 +13,10 @@
     <state-9  />
     <state-10  />
     <state-11  />
-    <state-12  /> -->
+    <state-12  />
     <state-13  />
+    <state-14  /> -->
+    <state-15  />
 </template>
 
 <script setup>
@@ -32,4 +34,7 @@ import State10 from "./2/4.actions-forward.vue"
 import State11 from "./2/4.actions-respond.vue"
 import State12 from "./2/4.actions-error.vue"
 import State13 from "./2/4.actions-choose.vue"
+
+import State14 from "./2/5.guard-cond.vue"
+import State15 from "./2/5.guard-custom.vue"
 </script>

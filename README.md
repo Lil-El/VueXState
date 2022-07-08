@@ -6,5 +6,4 @@ xstate在系统的应用；
 
 相比其他
 
-
-https://xstate.js.org/docs/zh/guides/actions.html#%E5%8D%87%E9%AB%98%E5%8A%A8%E4%BD%9C-raise-action
+https://xstate.js.org/docs/zh/guides/context.html#%E5%88%9D%E5%A7%8B%E5%8C%96-context
