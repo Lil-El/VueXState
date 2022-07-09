@@ -15,8 +15,9 @@
     <state-11  />
     <state-12  />
     <state-13  />
-    <state-14  /> -->
-    <state-15  />
+    <state-14  />
+    <state-15  /> -->
+    <state-16  />
 </template>
 
 <script setup>
@@ -37,4 +38,6 @@ import State13 from "./2/4.actions-choose.vue"
 
 import State14 from "./2/5.guard-cond.vue"
 import State15 from "./2/5.guard-custom.vue"
+
+import State16 from "./2/6.context-assign.vue"
 </script>
