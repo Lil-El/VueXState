@@ -18,8 +18,9 @@
     <state-14  />
     <state-15  />
     <state-16  />
-    <state-17  /> -->
-    <state-18  />
+    <state-17  />
+    <state-18  /> -->
+    <state-21  />
 </template>
 
 <script setup>
@@ -44,4 +45,8 @@ import State15 from "./2/5.guard-custom.vue"
 import State16 from "./2/6.context-assign.vue"
 import State17 from "./2/7.model.vue"
 import State18 from "./2/8.activities.vue"
+
+import State19 from "./3/1.service.invoke.vue"
+import State20 from "./3/2.service.callback.vue"
+import State21 from "./3/3.service.callbackReceive.vue"
 </script>
