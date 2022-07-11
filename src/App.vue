@@ -20,7 +20,7 @@
     <state-16  />
     <state-17  />
     <state-18  /> -->
-    <state-21  />
+    <state-23  />
 </template>
 
 <script setup>
@@ -49,4 +49,6 @@ import State18 from "./2/8.activities.vue"
 import State19 from "./3/1.service.invoke.vue"
 import State20 from "./3/2.service.callback.vue"
 import State21 from "./3/3.service.callbackReceive.vue"
+import State22 from "./3/4.service.machine.vue"
+import State23 from "./3/5.service.send.vue"
 </script>

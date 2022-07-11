@@ -6,4 +6,4 @@ xstate在系统的应用；
 
 相比其他
 
-https://xstate.js.org/docs/zh/guides/communication.html#%E8%B0%83%E7%94%A8-machines
+https://xstate.js.org/docs/zh/guides/communication.html#%E5%8F%91%E9%80%81%E5%93%8D%E5%BA%94
