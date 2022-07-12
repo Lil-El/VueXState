@@ -20,7 +20,7 @@
     <state-16  />
     <state-17  />
     <state-18  /> -->
-    <state-23  />
+    <state-current />
 </template>
 
 <script setup>
@@ -51,4 +51,12 @@ import State20 from "./3/2.service.callback.vue"
 import State21 from "./3/3.service.callbackReceive.vue"
 import State22 from "./3/4.service.machine.vue"
 import State23 from "./3/5.service.send.vue"
+import State24 from "./3/6.service.respond.vue"
+import State25 from "./3/7.service.multiple.vue"
+
+import State26 from "./4/1.actors-machine.vue"
+import State27 from "./4/2.actors-cb.vue"
+import State28 from "./4/3.actors-promise.vue"
+import State29 from "./4/4.actors-stop.vue"
+import StateCurrent from "./4/5.actors-state.vue"
 </script>
