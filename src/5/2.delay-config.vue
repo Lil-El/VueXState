@@ -17,11 +17,12 @@ const machine = createMachine(
             active: {
                 after: {
                     1000: {
-                        target: "state1",
+                        target: "#MM1",
                     },
                 },
             },
             state1: {
+                id: "MM1",
                 after: {
                     DELAY: {
                         target: "state2",
