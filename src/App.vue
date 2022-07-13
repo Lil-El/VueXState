@@ -58,5 +58,9 @@ import State26 from "./4/1.actors-machine.vue"
 import State27 from "./4/2.actors-cb.vue"
 import State28 from "./4/3.actors-promise.vue"
 import State29 from "./4/4.actors-stop.vue"
-import StateCurrent from "./4/5.actors-state.vue"
+import State30 from "./4/5.actors-state.vue"
+
+import State31 from "./5/1.delay.vue"
+import State32 from "./5/2.delay-config.vue"
+import StateCurrent from "./5/3.delay-cancel.vue"
 </script>
